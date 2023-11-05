@@ -1,0 +1,18 @@
+<section class="container">
+  <table class="table">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>email</th>
+      <th>Company</th>
+    </tr>
+    <tr *ngFor="let user of users()">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.username.toLowerCase() }}</td>
+      <td>{{ user.email.toLowerCase() }}</td>
+      <td>{{ user.company.name }}</td>
+    </tr>
+  </table>
+</section>
